@@ -1,4 +1,4 @@
-# [Model/Data/Code] Project Title 
+# Medical Image Segmentation Foundation Model
 <!-- select Model and/or Data and/or Code as needed>
 ### Welcome to OpenMEDLab! 👋
 
@@ -47,18 +47,14 @@
 [![Contributors](https://img.shields.io/github/contributors/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/graphs/contributors)
 [![GitHub license](https://img.shields.io/github/license/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/blob/master/LICENSE)
 
-Updated on 2023.05.25
-
-
+This repository provides the official implementation of ``MIS-FM: Medical Image Segmentation Foundation Model 
+based on Large Scale Self-supervised Pretraining".
 
 ## Key Features
 
-This repository provides the official implementation of ...
-
-key feature bulletin points here
-- 1
-- 2
-- 3
+- A new self-supervised learning method based on Volume Fusion that is a pretext task for segmentation.
+- A new network architecture PCT-Net that combines the advantages of CNNs and Transformers.
+- A foundation model that is trained from 100k unannotated 3D CT scans. 
 
 ## Links
 
