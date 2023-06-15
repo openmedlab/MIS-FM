@@ -52,7 +52,7 @@ based on Large Scale Self-supervised Pretraining".
 
 ## Key Features
 
-- A new self-supervised learning method based on Volume Fusion that is a pretext task for segmentation.
+- A new self-supervised learning method based on Volume Fusion that is a segmentation-based pretext task.
 - A new network architecture PCT-Net that combines the advantages of CNNs and Transformers.
 - A foundation model that is trained from 100k unannotated 3D CT scans. 
 
@@ -71,7 +71,7 @@ intro text here.
 
 <!-- Insert a pipeline of your algorithm here if got one -->
 <div align="center">
-    <a href="https://"><img width="1000px" height="auto" src="https://github.com/openmedlab/sampleProject/blob/main/diagram_sample.png"></a>
+    <a href="https://"><img width="1000px" height="auto" src="./figures/framework.png.png"></a>
 </div>
 
 More intro text here.
