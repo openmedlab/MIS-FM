@@ -71,7 +71,7 @@ intro text here.
 
 <!-- Insert a pipeline of your algorithm here if got one -->
 <div align="center">
-    <a href="https://"><img width="1000px" height="auto" src="./figures/framework.png.png"></a>
+    <a href="https://"><img width="1000px" height="auto" src="figures/framework.png"></a>
 </div>
 
 More intro text here.
