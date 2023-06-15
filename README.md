@@ -67,7 +67,7 @@ Pretrained with Large-Scale Unannotated 3D Images using Volume Fusion".
 <!-- give a introduction of your project -->
 ## Details
 
-The following figure shows an overview of our proposed method for pretraining with unannotated 3D medical images. We introduce a pretext task based on sudo-segmentation, where Volume Fusion is used  to generate paired images and segmentation labels to pretrain the 3D segmentation model, which can better match the downstream task of segmentation than existing SSL methods. 
+The following figure shows an overview of our proposed method for pretraining with unannotated 3D medical images. We introduce a pretext task based on sudo-segmentation, where Volume Fusion is used  to generate paired images and segmentation labels to pretrain the 3D segmentation model, which can better match the downstream task of segmentation than existing Self-Supervised Learning (SSL) methods. 
 
 <!-- Insert a pipeline of your algorithm here if got one -->
 <div align="center">
@@ -77,10 +77,11 @@ The following figure shows an overview of our proposed method for pretraining wi
 The pretraining strategy is combined with our proposed PCT-Net to obtain a pretrained model that is applied to segmentation of different objects from 3D medical images after fine tuning with a small set of labeled data.
 
 
-## Dataset Links
+## Datasets
 
-- [Liver Tumor Segmentation Challenge (LiTS)](https://competitions.codalab.org/competitions/17094#learn_the_details)
-- [Kidney and Kidney Tumor Segmentation (KiTS)](https://kits21.kits-challenge.org/participate#download-block)
+<div align="center">
+    <a href="https://"><img width="500px" height="auto" src="figures/datasets.png"></a>
+</div>
 
 ## Get Started
 
