@@ -47,8 +47,8 @@
 [![Contributors](https://img.shields.io/github/contributors/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/graphs/contributors)
 [![GitHub license](https://img.shields.io/github/license/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/blob/master/LICENSE)
 
-This repository provides the official implementation of ``MIS-FM: Medical Image Segmentation Foundation Model 
-based on Large Scale Self-supervised Pretraining".
+This repository provides the official implementation of "MIS-FM: Medical Image Segmentation Foundation Model 
+Pretrained with Large-Scale Unannotated 3D Images using Volume Fusion".
 
 ## Key Features
 
@@ -71,7 +71,7 @@ The following figure shows an overview of our proposed method for pretraining wi
 
 <!-- Insert a pipeline of your algorithm here if got one -->
 <div align="center">
-    <a href="https://"><img width="600px" height="auto" src="figures/framework.png"></a>
+    <a href="https://"><img width="500px" height="auto" src="figures/framework.png"></a>
 </div>
 
 The pretraining strategy is combined with our proposed PCT-Net to obtain a pretrained model that is applied to segmentation of different objects from 3D medical images after fine tuning with a small set of labeled data.
