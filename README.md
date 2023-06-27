@@ -90,15 +90,15 @@ We used 10k CT volumes from public datasets and 98k private CT volumes for pretr
 > torch==1.10.2  
 > PyMIC 
 
-To use [PyMIC](https://github.com/HiLab-git/PyMIC), please download the latest code in the master branch, and add the path of pymic source code to `PYTHONPATH` environmental variable. See `bash.sh` for example.
+To use [PyMIC](https://github.com/HiLab-git/PyMIC), please download the latest code in the master branch, and add the path of PyMIC source code to `PYTHONPATH` environmental variable. See `bash.sh` for example.
 
 
 **Demo data**
-In this demo, we show using PCT-Net for left atrial segmentation. The dataset can be downloaded from [PYMIC_data](https://drive.google.com/file/d/1eZakSEBr_zfIHFTAc96OFJix8cUBf-KR/view?usp=sharing).
+In this demo, we show the use of PCT-Net for left atrial segmentation. The dataset can be downloaded from [PYMIC_data](https://drive.google.com/file/d/1eZakSEBr_zfIHFTAc96OFJix8cUBf-KR/view?usp=sharing).
 
 The dataset, network and training/testing settings can be found in configuration files: `demo/pctnet_scratch.cfg` and `demo/pctnet_pretrain.cfg` for training from scratch and using the pretrained weights, respectively.
 
-After downloading the data, edit the value of `root_dir` in the configuration files, and make sure the path to the images are correct.
+After downloading the data, edit the value of `root_dir` in the configuration files, and make sure the path to the images is correct.
 
 **Training**
 ```bash
@@ -124,24 +124,14 @@ python predict.py demo/pctnet_pretrain.cfg
 ```bash
 python $PyMIC_path/pymic/util/evaluation_seg.py -cfg demo/evaluation.cfg
 ```
-You may need to edit `demo/evaluation.cfg` to specify the path of segmented results before evaluating the performance.
-
-## 🙋‍♀️ Feedback and Contact
-
-- Email
-- Webpage 
-- Social media
+You may need to edit `demo/evaluation.cfg` to specify the path of segmentation results before evaluating the performance.
 
 
 ## 🛡️ License
 
-This project is under the CC-BY-NC 4.0 license. See [LICENSE](LICENSE) for details.
+This project is under the Apache license. See [LICENSE](LICENSE) for details.
 
-## 🙏 Acknowledgement
-
-A lot of code is modified from [monai](https://github.com/Project-MONAI/MONAI).
-
-## 📝 Citation
+<!-- ## 📝 Citation
 
 If you find this repository useful, please consider citing this paper:
 ```
@@ -151,5 +141,5 @@ If you find this repository useful, please consider citing this paper:
   journal={arXiv preprint arXiv:},
   year={2023}
 }
-```
+``` -->
 
