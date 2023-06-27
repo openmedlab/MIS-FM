@@ -1,0 +1,2 @@
+Download pretrianed weight from google drive:
+https://drive.google.com/file/d/1jQc-2hhsp3EyZj54_KEJte85diUtW8Fg/view?usp=sharing
