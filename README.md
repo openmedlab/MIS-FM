@@ -59,7 +59,7 @@ Pretrained with Large-Scale Unannotated 3D Images using Volume Fusion".
 
 ## Links
 
-- [Paper](https://)
+- [Paper (To be shown on arxiv soon)](https://)
 - [Model (Google Drive)](https://https://drive.google.com/file/d/1jQc-2hhsp3EyZj54_KEJte85diUtW8Fg/view?usp=sharing)
 <!-- [Code] may link to your project at your institute>
 
@@ -87,12 +87,8 @@ We used 10k CT volumes from public datasets and 98k private CT volumes for pretr
 ## Get Started
 
 **Main Requirements**  
-> connected-components-3d  
-> h5py==3.6.0  
-> monai==0.9.0  
-> torch==1.11.0  
-> tqdm  
-> fastremap  
+> torch==1.10.2  
+> pymic 
 
 **Installation**
 ```bash
