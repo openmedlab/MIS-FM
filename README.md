@@ -126,6 +126,7 @@ python $PyMIC_path/pymic/util/evaluation_seg.py -cfg demo/evaluation.cfg
 ```
 You may need to edit `demo/evaluation.cfg` to specify the path of segmentation results before evaluating the performance.
 
+In this simple demo, the segmentation Dice was 90.71% and 92.73% for training from scratch and from the pretrained weights, respectively.
 
 ## 🛡️ License
 
