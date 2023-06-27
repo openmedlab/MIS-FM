@@ -1,4 +1,3 @@
-# PyMIC_path=/home/x/projects/PyMIC_project/PyMIC
 PyMIC_path=/home/x/projects/PyMIC_project/PyMIC_release/PyMIC-master
 export PYTHONPATH=$PYTHONPATH:$PyMIC_path
 
