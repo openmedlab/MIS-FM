@@ -84,7 +84,7 @@ We used 10k CT volumes from public datasets and 98k private CT volumes for pretr
     <a href="https://"><img width="500px" height="auto" src="figures/datasets.png"></a>
 </div>
 
-## Get Started
+## Demo for using the pretrained model
 
 **Main Requirements**  
 > torch==1.10.2  
@@ -94,6 +94,7 @@ To use [PyMIC](https://github.com/HiLab-git/PyMIC), please download the latest c
 
 
 **Demo data**
+
 In this demo, we show the use of PCT-Net for left atrial segmentation. The dataset can be downloaded from [PYMIC_data](https://drive.google.com/file/d/1eZakSEBr_zfIHFTAc96OFJix8cUBf-KR/view?usp=sharing).
 
 The dataset, network and training/testing settings can be found in configuration files: `demo/pctnet_scratch.cfg` and `demo/pctnet_pretrain.cfg` for training from scratch and using the pretrained weights, respectively.
