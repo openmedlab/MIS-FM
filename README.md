@@ -55,7 +55,7 @@ Pretrained with Large-Scale Unannotated 3D Images using Volume Fusion".
 
 - A new self-supervised learning method based on Volume Fusion that is a segmentation-based pretext task.
 - A new network architecture PCT-Net that combines the advantages of CNNs and Transformers.
-- A foundation model that is trained from 140k unannotated 3D CT scans. 
+- A foundation model that is trained from 110k unannotated 3D CT scans. 
 
 ## Links
 
