@@ -79,7 +79,7 @@ The pretraining strategy is combined with our proposed PCT-Net to obtain a pretr
 
 ## Datasets
 
-We used 10k CT volumes from public datasets and 130k private CT volumes for pretraining.
+We used 10k CT volumes from public datasets and 103k private CT volumes for pretraining.
 <div align="center">
     <a href="https://"><img width="500px" height="auto" src="figures/datasets.png"></a>
 </div>
