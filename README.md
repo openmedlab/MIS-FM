@@ -48,8 +48,16 @@
 [![Contributors](https://img.shields.io/github/contributors/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/graphs/contributors) -->
 [![GitHub license](https://img.shields.io/github/license/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/blob/master/LICENSE)
 
-This repository provides the official implementation of "MIS-FM: Medical Image Segmentation Foundation Model 
-Pretrained with Large-Scale Unannotated 3D Images using Volume Fusion".
+This repository provides the official implementation of "MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset".
+
+```
+@article{Wang2023MisFm,
+  title={MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset},
+  author={Guotai Wang, Jianghao Wu, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang},
+  journal={arXiv preprint arXiv:2306.16925},
+  year={2023}
+}
+```
 
 ## Key Features
 
