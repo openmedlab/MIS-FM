@@ -59,7 +59,7 @@ Pretrained with Large-Scale Unannotated 3D Images using Volume Fusion".
 
 ## Links
 
-- [Paper (To be shown on arxiv soon)](https://)
+- [Paper](https://arxiv.org/pdf/2306.16925.pdf)
 - [Model (Google Drive)](https://https://drive.google.com/file/d/1jQc-2hhsp3EyZj54_KEJte85diUtW8Fg/view?usp=sharing)
 <!-- [Code] may link to your project at your institute>
 
