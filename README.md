@@ -75,7 +75,7 @@ This repository provides the official implementation of "MIS-FM: 3D Medical Imag
 <!-- give a introduction of your project -->
 ## Details
 
-The following figure shows an overview of our proposed method for pretraining with unannotated 3D medical images. We introduce a pretext task based on sudo-segmentation, where Volume Fusion is used  to generate paired images and segmentation labels to pretrain the 3D segmentation model, which can better match the downstream task of segmentation than existing Self-Supervised Learning (SSL) methods. 
+The following figure shows an overview of our proposed method for pretraining with unannotated 3D medical images. We introduce a pretext task based on pseudo-segmentation, where Volume Fusion is used  to generate paired images and segmentation labels to pretrain the 3D segmentation model, which can better match the downstream task of segmentation than existing Self-Supervised Learning (SSL) methods. 
 
 <!-- Insert a pipeline of your algorithm here if got one -->
 <div align="center">
