@@ -68,7 +68,7 @@ This repository provides the official implementation of "MIS-FM: 3D Medical Imag
 ## Links
 
 - [Paper](https://arxiv.org/pdf/2306.16925.pdf)
-- [Model (Google Drive)](https://https://drive.google.com/file/d/1jQc-2hhsp3EyZj54_KEJte85diUtW8Fg/view?usp=sharing)
+- [Model (Google Drive)](https://drive.google.com/file/d/1jQc-2hhsp3EyZj54_KEJte85diUtW8Fg/view?usp=sharing)
 <!-- [Code] may link to your project at your institute>
 
 
