@@ -50,15 +50,15 @@
 
 This repository provides the official implementation of pretrained medical image segmentation models based on Volume Fusion, accordingn to the following papers:
 ```
-@article{Wang2023MisFm,
+@article{Wang2023arxiv,
   title={MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset},
   author={Guotai Wang, Jianghao Wu, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang},
   journal={arXiv preprint arXiv:2306.16925},
   year={2023}
 }
-@article{Wang2023MisFm,
-  title={MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset},
-  author={Guotai Wang, Jianghao Wu, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang},
+@article{Wang2024MisFm,
+  title={	Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentation},
+  author={Guotai Wang, Jia Fu,Jianghao Wu, Xiangde Luo, Yubo Zhou, Xinglong Liu, Kang Li, Jingsheng Lin, Baiyong Sheng, Shaoting Zhang},
   journal={Submitted to MedIA},
   year={2024}
 }
