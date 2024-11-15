@@ -48,8 +48,7 @@
 [![Contributors](https://img.shields.io/github/contributors/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/graphs/contributors) -->
 [![GitHub license](https://img.shields.io/github/license/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/blob/master/LICENSE)
 
-This repository provides the official implementation of "MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset".
-
+This repository provides the official implementation of pretrained medical image segmentation models based on Volume Fusion, accordingn to the following papers:
 ```
 @article{Wang2023MisFm,
   title={MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset},
@@ -57,13 +56,13 @@ This repository provides the official implementation of "MIS-FM: 3D Medical Imag
   journal={arXiv preprint arXiv:2306.16925},
   year={2023}
 }
+@article{Wang2023MisFm,
+  title={MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset},
+  author={Guotai Wang, Jianghao Wu, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang},
+  journal={Submitted to MedIA},
+  year={2024}
+}
 ```
-
-## Key Features
-
-- A new self-supervised learning method based on Volume Fusion that is a segmentation-based pretext task.
-- A new network architecture PCT-Net that combines the advantages of CNNs and Transformers.
-- A foundation model that is trained from 110k unannotated 3D CT scans. 
 
 ## Links
 
