@@ -85,7 +85,7 @@ The following figure shows an overview of our proposed method for pretraining wi
 -->
 
 ## VolF for Pre-training
-The implementation of VolF (and some other self-supervised learning methods) is provided in [PyMIC][pymic_link].
+1, The implementation of VolF (and some other self-supervised learning methods) is provided in [PyMIC][pymic_link].
 Please see the PyMIC repository for details.  Especially, the following three classes are key components of VolF: 
 
 * `Crop4VolumeFusion` (see `pymic/transform/crop4vf.py`) A data transform operation that crops two sub-volumes 
@@ -97,8 +97,12 @@ and obtain the ground truth for pseudo-segmenation task.
 * `SelfSupVolumeFusion` (see `pymic/net_run/self_sup/self_volf.py`) A class for self-supervised training with VolF, which
 inherits from a supervised segmentation class. 
 
-[pymic_link]:https://github.com/HiLab-git/PyMIC
+2, For examples of using VolF for pretrianing, please see a demo implemented in [PyMIC_examples][volf_demo]. 
+In that demo, we train a 3D UNet with the LUNA dataset using VolF, and show applying the pretrained model to 
+a downstream dataset LCTSC2017 for chest organ segmentation. 
 
+[pymic_link]:https://github.com/HiLab-git/PyMIC
+[volf_demo]:https://github.com/HiLab-git/PyMIC_examples/tree/main/seg_self_sup/lung
 <!-- ### Datasets
 
 We used 10k CT volumes from public datasets and 103k private CT volumes for pretraining.
