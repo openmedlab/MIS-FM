@@ -48,7 +48,7 @@
 [![Contributors](https://img.shields.io/github/contributors/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/graphs/contributors) -->
 [![GitHub license](https://img.shields.io/github/license/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/blob/master/LICENSE)
 
-This repository provides the official implementation of pretrained medical image segmentation models based on Volume Fusion, accordingn to the following papers:
+This repository provides the official implementation of pretrained medical image segmentation models based on Volume Fusion (VolF), accordingn to the following papers:
 ```
 @article{Wang2023arxiv,
   title={MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset},
@@ -78,18 +78,31 @@ The following figure shows an overview of our proposed method for pretraining wi
 
 <!-- Insert a pipeline of your algorithm here if got one -->
 <div align="center">
-    <a href="https://"><img width="500px" height="auto" src="figures/framework.png"></a>
+    <a href="https://"><img width="auto" height="auto" src="figures/framework.png"></a>
 </div>
 
-The pretraining strategy is combined with our proposed PCT-Net to obtain a pretrained model that is applied to segmentation of different objects from 3D medical images after fine tuning with a small set of labeled data.
+<!-- The pretraining strategy is combined with our proposed PCT-Net to obtain a pretrained model that is applied to segmentation of different objects from 3D medical images after fine tuning with a small set of labeled data.
+-->
 
+## VolF for Pre-training
+The implementation of VolF (and some other self-supervised learning methods) is provided in [PyMIC][pymic_link].
+Please see the PyMIC repository for details.  Especially, the following three classes are key components of VolF: 
 
-## Datasets
+* `Crop4VolumeFusion`: 
+
+* `VolumeFusion`: 
+
+* `SelfSupVolumeFusion`: 
+
+[pymic_link]:https://github.com/HiLab-git/PyMIC
+
+<!-- ### Datasets
 
 We used 10k CT volumes from public datasets and 103k private CT volumes for pretraining.
 <div align="center">
     <a href="https://"><img width="500px" height="auto" src="figures/datasets.png"></a>
 </div>
+-->
 
 ## Demo for using the pretrained model
 
