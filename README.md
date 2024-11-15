@@ -88,11 +88,14 @@ The following figure shows an overview of our proposed method for pretraining wi
 The implementation of VolF (and some other self-supervised learning methods) is provided in [PyMIC][pymic_link].
 Please see the PyMIC repository for details.  Especially, the following three classes are key components of VolF: 
 
-* `Crop4VolumeFusion`: 
+* `Crop4VolumeFusion` (see `pymic/transform/crop4vf.py`) A data transform operation that crops two sub-volumes 
+from a large volume with data augmentation. 
 
-* `VolumeFusion`: 
+* `VolumeFusion` (see `pymic/transform/crop4vf.py`) Fuse two sub-volumes based on a discretized fusion coefficient map,
+and obtain the ground truth for pseudo-segmenation task.
 
-* `SelfSupVolumeFusion`: 
+* `SelfSupVolumeFusion` (see `pymic/net_run/self_sup/self_volf.py`) A class for self-supervised training with VolF, which
+inherits from a supervised segmentation class. 
 
 [pymic_link]:https://github.com/HiLab-git/PyMIC
 
