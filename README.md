@@ -99,7 +99,7 @@ and obtain the ground truth for pseudo-segmenation task.
 * `SelfSupVolumeFusion` (see `pymic/net_run/self_sup/self_volf.py`) A class for self-supervised training with VolF, which
 inherits from a supervised segmentation class. 
 
-2, For examples of using VolF for pretrianing, please see a demo implemented in [PyMIC_examples][volf_demo]. 
+2, For examples of using VolF for pretraining, please see a demo implemented in [PyMIC_examples][volf_demo]. 
 In that demo, we train a 3D UNet with the LUNA dataset using VolF, and show applying the pretrained model to 
 a downstream dataset LCTSC2017 for chest organ segmentation. 
 
@@ -119,26 +119,25 @@ The pretrained weights can be downloaded from [Google Drive](https://drive.googl
 
 |Network  |Dataset | Model Name| 
 |---|---|---|
-|UNet3D|AbdomenCT-1K| `fmunet_abk1k_volf.pt`|
+|FMUNet|AbdomenCT-1K| `fmunet_abk1k_volf.pt`|
 |PCT-Net|CT10k| `pctnet_ct10k_volf.pt`|
 
+where FMUNet is a modified version of 3D UNet as described in [2], and PCT-Net is a hybrid model 
+using CNN and Transformer proposed in [1].
 
-## Demo for using the pretrained model
-
-**Main Requirements**  
-> torch==1.10.2  
-> PyMIC==0.5.0 
-
-
-Here we provide 
-
+## Demo for Using the Pretrained Model
 **Demo data**
 
-In this demo, we show the use of PCT-Net for left atrial segmentation. The dataset can be downloaded from [PYMIC_data](https://drive.google.com/file/d/1eZakSEBr_zfIHFTAc96OFJix8cUBf-KR/view?usp=sharing).
+In this demo, we show the use of pretrained FMUNet and PCT-Net for left atrial segmentation. 
+The downstream dataset can be downloaded from [PYMIC_data](https://drive.google.com/file/d/1eZakSEBr_zfIHFTAc96OFJix8cUBf-KR/view?usp=sharing).
 
-The dataset, network and training/testing settings can be found in configuration files: `demo/pctnet_scratch.cfg` and `demo/pctnet_pretrain.cfg` for training from scratch and using the pretrained weights, respectively.
+The settings for dataset, network and training/testing can be found in configuration files: 
 
-After downloading the data, edit the value of `root_dir` in the configuration files, and make sure the path to the images is correct.
+* `demo/pctnet_scratch.cfg` and `demo/fmunet_scratch.cfg` for training from scratch.
+
+* `demo/pctnet_pretrain.cfg` and `demo/fmunet_pretrain.cfg` for using the pretrained models for training.
+
+After downloading the data, edit the value of `train_dir` in the configuration files, and make sure the path to the images is correct.
 
 **Training**
 ```bash
@@ -162,7 +161,7 @@ python predict.py demo/pctnet_pretrain.cfg
 
 **Evaluation**
 ```bash
-python $PyMIC_path/pymic/util/evaluation_seg.py -cfg demo/evaluation.cfg
+pymic_eval_seg -cfg demo/evaluation.cfg
 ```
 You may need to edit `demo/evaluation.cfg` to specify the path of segmentation results before evaluating the performance.
 
