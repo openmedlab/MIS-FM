@@ -111,14 +111,22 @@ We used 10k CT volumes from public datasets and 103k private CT volumes for pret
 </div>
 -->
 
+## List of Pretrained Models
+Here we provide a list of models pretrained by VoLF using different network structures and datasets. 
+
+|Network  |Dataset | Model Name| 
+|UNet3D|AbdomenCT-1K| ---|
+|PCT-Net| [Ronneberger et al., MICCAI 2015][unet_paper]|  2D Unet|
+
+
 ## Demo for using the pretrained model
 
 **Main Requirements**  
 > torch==1.10.2  
-> PyMIC 
+> PyMIC==0.5.0 
 
-To use [PyMIC](https://github.com/HiLab-git/PyMIC), please download the latest code in the master branch, and add the path of PyMIC source code to `PYTHONPATH` environmental variable. See `bash.sh` for example.
 
+Here we provide 
 
 **Demo data**
 

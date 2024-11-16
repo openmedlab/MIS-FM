@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function, division
+import argparse
 import logging
 import os
 import sys
@@ -14,19 +15,22 @@ def main():
     The main function for running a network for training.
     """
     if(len(sys.argv) < 2):
-        print('Number of arguments should be 2. e.g.')
+        print('Number of arguments should be at least 2. e.g.')
         print('   python train.py config.cfg')
         exit()
-    cfg_file = str(sys.argv[1])
-    if(not os.path.isfile(cfg_file)):
-        raise ValueError("The config file does not exist: " + cfg_file)
-    config   = parse_config(cfg_file)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("cfg", help="configuration file for training")
+    args = parser.parse_args()
+    if(not os.path.isfile(args.cfg)):
+        raise ValueError("The config file does not exist: " + args.cfg)
+    config   = parse_config(args)
     config   = synchronize_config(config)
-    log_dir  = config['training']['ckpt_save_dir']
+    
+    log_dir  = config['training']['ckpt_dir']
     if(not os.path.exists(log_dir)):
         os.makedirs(log_dir, exist_ok=True)
-    dst_cfg = cfg_file if "/" not in cfg_file else cfg_file.split("/")[-1]
-    shutil.copy(cfg_file, log_dir + "/" + dst_cfg)
+    dst_cfg = args.cfg if "/" not in args.cfg else args.cfg.split("/")[-1]
+    shutil.copy(args.cfg, log_dir + "/" + dst_cfg)
     datetime_str = str(datetime.now())[:-7].replace(":", "_")
     if sys.version.startswith("3.9"):
         logging.basicConfig(filename=log_dir+"/log_train_{0:}.txt".format(datetime_str), 
