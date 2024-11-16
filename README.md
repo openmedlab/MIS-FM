@@ -116,8 +116,8 @@ Here we provide a list of models pretrained by VoLF using different network stru
 
 |Network  |Dataset | Model Name| 
 |---|---|---|
-|UNet3D|AbdomenCT-1K| ---|
-|PCT-Net| [Ronneberger et al., MICCAI 2015][unet_paper]|  2D Unet|
+|UNet3D|AbdomenCT-1K| `fmunet_abk1k_volf.pt`|
+|PCT-Net|CT10k| `pctnet_ct10k_volf.pt`|
 
 
 ## Demo for using the pretrained model
