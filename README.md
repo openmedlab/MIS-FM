@@ -49,7 +49,13 @@
 [![GitHub license](https://img.shields.io/github/license/opendilab/DI-engine)](https://github.com/opendilab/DI-engine/blob/master/LICENSE)
 
 This repository provides the official implementation of pretrained medical image segmentation models based on Volume Fusion (VolF), accordingn to the following papers:
-```
+
+* [1] Guotai Wang, Jianghao Wu, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang, MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset.
+[arXiv:2306.16925](https://arxiv.org/pdf/2306.16925.pdf), 2023.
+
+* [2] Guotai Wang, Jia Fu,Jianghao Wu, Xiangde Luo, Yubo Zhou, Xinglong Liu, Kang Li, Jingsheng Lin, Baiyong Sheng, Shaoting Zhang,
+Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentation. Submitted to MedIA, 2024.
+<!-- 
 @article{Wang2023arxiv,
   title={MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset},
   author={Guotai Wang, Jianghao Wu, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang},
@@ -62,12 +68,8 @@ This repository provides the official implementation of pretrained medical image
   journal={Submitted to MedIA},
   year={2024}
 }
-```
+-->
 
-## Links
-
-- [Paper](https://arxiv.org/pdf/2306.16925.pdf)
-- [Model (Google Drive)](https://drive.google.com/file/d/1jQc-2hhsp3EyZj54_KEJte85diUtW8Fg/view?usp=sharing)
 <!-- [Code] may link to your project at your institute>
 
 
@@ -113,6 +115,7 @@ We used 10k CT volumes from public datasets and 103k private CT volumes for pret
 
 ## List of Pretrained Models
 Here we provide a list of models pretrained by VoLF using different network structures and datasets. 
+The pretrained weights can be downloaded from [Google Drive](https://drive.google.com/file/d/1jQc-2hhsp3EyZj54_KEJte85diUtW8Fg/view?usp=sharing).
 
 |Network  |Dataset | Model Name| 
 |---|---|---|
