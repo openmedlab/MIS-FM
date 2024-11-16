@@ -141,23 +141,15 @@ After downloading the data, edit the value of `train_dir` in the configuration f
 
 **Training**
 ```bash
-python train.py demo/pctnet_scratch.cfg
+python train.py demo/{NET_NAME}_scratch.cfg
 ```
-or 
-
-```bash
-python train.py demo/pctnet_pretrain.cfg
-```
+where `NET_NAME` could be `fmunet` or `pctnet`.
 
 **Inference**
 ```bash
-python predict.py demo/pctnet_scratch.cfg
+python predict.py demo/{NET_NAME}_scratch.cfg
 ```
-or 
-
-```bash
-python predict.py demo/pctnet_pretrain.cfg
-```
+where `NET_NAME` could be `fmunet` or `pctnet`.
 
 **Evaluation**
 ```bash
@@ -165,7 +157,8 @@ pymic_eval_seg -cfg demo/evaluation.cfg
 ```
 You may need to edit `demo/evaluation.cfg` to specify the path of segmentation results before evaluating the performance.
 
-In this simple demo, the segmentation Dice was 90.71% and 92.73% for training from scratch and from the pretrained weights, respectively.
+In this simple demo, for PCT-Net, the segmentation Dice was 90.71% and 91.80% for training from scratch and from the pretrained weights, respectively. Note that the 
+maximal iteration was set to 6000 in this demo for a quick training. You may use a larger iteration number for an even better performance. 
 
 ## 🛡️ License
 
