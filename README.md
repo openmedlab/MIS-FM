@@ -128,8 +128,12 @@ using CNN and Transformer proposed in [1].
 ## Demo for Using the Pretrained Model
 **Demo data**
 
-In this demo, we show the use of pretrained FMUNet and PCT-Net for left atrial segmentation. 
-The downstream dataset can be downloaded from [PYMIC_data](https://drive.google.com/file/d/1eZakSEBr_zfIHFTAc96OFJix8cUBf-KR/view?usp=sharing).
+In this demo, we show the use of pretrained FMUNet and PCT-Net for left atrial segmentation. Please install [PyMIC][pymic_link] and its requirements first. PyMIC can be installed by:
+```bash
+pip install PYMIC
+```
+
+The downstream dataset for this demo can be downloaded from [PYMIC_data](https://drive.google.com/file/d/1eZakSEBr_zfIHFTAc96OFJix8cUBf-KR/view?usp=sharing).
 
 The settings for dataset, network and training/testing can be found in configuration files: 
 
