@@ -115,6 +115,7 @@ We used 10k CT volumes from public datasets and 103k private CT volumes for pret
 Here we provide a list of models pretrained by VoLF using different network structures and datasets. 
 
 |Network  |Dataset | Model Name| 
+|---|---|---|
 |UNet3D|AbdomenCT-1K| ---|
 |PCT-Net| [Ronneberger et al., MICCAI 2015][unet_paper]|  2D Unet|
 
