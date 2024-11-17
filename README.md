@@ -126,11 +126,11 @@ where FMUNet is a modified version of 3D UNet as described in [2], and PCT-Net i
 using CNN and Transformer proposed in [1].
 
 ## Demo for Using the Pretrained Model
-**Demo data**
+**Package and data requirement**
 
 In this demo, we show the use of pretrained FMUNet and PCT-Net for left atrial segmentation. Please install [PyMIC][pymic_link] and its requirements first. PyMIC can be installed by:
 ```bash
-pip install PYMIC
+pip install PYMIC==0.5.0
 ```
 
 The downstream dataset for this demo can be downloaded from [PYMIC_data](https://drive.google.com/file/d/1eZakSEBr_zfIHFTAc96OFJix8cUBf-KR/view?usp=sharing).
@@ -145,13 +145,13 @@ After downloading the data, edit the value of `train_dir` in the configuration f
 
 **Training**
 ```bash
-python train.py demo/{NET_NAME}_scratch.cfg
+python net_run.py train demo/{NET_NAME}_scratch.cfg
 ```
 where `NET_NAME` could be `fmunet` or `pctnet`.
 
 **Inference**
 ```bash
-python predict.py demo/{NET_NAME}_scratch.cfg
+python net_run.py test demo/{NET_NAME}_scratch.cfg
 ```
 where `NET_NAME` could be `fmunet` or `pctnet`.
 
