@@ -115,7 +115,7 @@ We used 10k CT volumes from public datasets and 103k private CT volumes for pret
 
 ## List of Pretrained Models
 Here we provide a list of models pretrained by VoLF using different network structures and datasets. 
-The pretrained weights can be downloaded from [Google Drive](https://drive.google.com/file/d/1jQc-2hhsp3EyZj54_KEJte85diUtW8Fg/view?usp=sharing).
+The pretrained weights can be downloaded from [Google Drive](https://drive.google.com/drive/folders/13OQh2eM0QFnwBRwBcKCqhKa46CnDojrD?usp=sharing).
 
 |Network  |Dataset | Model Name| 
 |---|---|---|

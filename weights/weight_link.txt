@@ -1,2 +1,2 @@
-Download pretrianed weight from google drive:
-https://drive.google.com/file/d/1jQc-2hhsp3EyZj54_KEJte85diUtW8Fg/view?usp=sharing
+Download pretrianed weights from google drive and put them here:
+https://drive.google.com/drive/folders/13OQh2eM0QFnwBRwBcKCqhKa46CnDojrD?usp=sharing
