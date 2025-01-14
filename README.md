@@ -54,7 +54,7 @@ This repository provides the official implementation of pretrained medical image
 [arXiv:2306.16925](https://arxiv.org/pdf/2306.16925.pdf), 2023.
 
 * [2] Guotai Wang, Jia Fu,Jianghao Wu, Xiangde Luo, Yubo Zhou, Xinglong Liu, Kang Li, Jingsheng Lin, Baiyong Sheng, Shaoting Zhang,
-Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentation. Submitted to MedIA, 2024.
+Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentation. Submitted to Journal, 2025.
 <!-- 
 @article{Wang2023arxiv,
   title={MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset},
