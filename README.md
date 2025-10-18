@@ -50,23 +50,25 @@
 
 This repository provides the official implementation of pretrained medical image segmentation models based on Volume Fusion (VolF), accordingn to the following papers:
 
-* [1] Guotai Wang, Jianghao Wu, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang, MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset.
-[arXiv:2306.16925](https://arxiv.org/pdf/2306.16925.pdf), 2023.
+* [1] Guotai Wang, Jia Fu,Jianghao Wu, Xiangde Luo, Yubo Zhou, Xinglong Liu, Kang Li, Jingsheng Lin, Baiyong Sheng, Shaoting Zhang,
+Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentation. [IEEE TIP, vol. 34, pp. 6041-6052](https://ieeexplore.ieee.org/document/11175343), 2025.
 
-* [2] Guotai Wang, Jia Fu,Jianghao Wu, Xiangde Luo, Yubo Zhou, Xinglong Liu, Kang Li, Jingsheng Lin, Baiyong Sheng, Shaoting Zhang,
-Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentation. Submitted to Journal, 2025.
+* [2] Guotai Wang, Jianghao Wu, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang, MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset.
+[arXiv:2306.16925](https://arxiv.org/pdf/2306.16925.pdf), 2023.
 <!-- 
+@article{Wang2025VolF,
+  title={	Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentation},
+  author={Guotai Wang, Jia Fu,Jianghao Wu, Xiangde Luo, Yubo Zhou, Xinglong Liu, Kang Li, Jingsheng Lin, Baiyong Sheng, Shaoting Zhang},
+  journal={IEEE Transactions on Image Processing},
+  volume={34},
+  pages={6041-6052},
+  year={2024}
+}
 @article{Wang2023arxiv,
   title={MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset},
   author={Guotai Wang, Jianghao Wu, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang},
   journal={arXiv preprint arXiv:2306.16925},
   year={2023}
-}
-@article{Wang2024MisFm,
-  title={	Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentation},
-  author={Guotai Wang, Jia Fu,Jianghao Wu, Xiangde Luo, Yubo Zhou, Xinglong Liu, Kang Li, Jingsheng Lin, Baiyong Sheng, Shaoting Zhang},
-  journal={Submitted to MedIA},
-  year={2024}
 }
 -->
 
@@ -76,7 +78,7 @@ Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentatio
 <!-- give a introduction of your project -->
 ## Details
 
-The following figure shows an overview of our proposed method for pretraining with unannotated 3D medical images. We introduce a pretext task based on pseudo-segmentation, where Volume Fusion is used  to generate paired images and segmentation labels to pretrain the 3D segmentation model, which can better match the downstream task of segmentation than existing Self-Supervised Learning (SSL) methods. 
+The following figure shows an overview of our proposed method for pretraining with unannotated 3D medical images. We introduce a pretext task based on pseudo-segmentation, where Volume Fusion (VolF) is used  to generate paired images and segmentation labels to pretrain the 3D segmentation model, which can better match the downstream task of segmentation than existing Self-Supervised Learning (SSL) methods. 
 
 <!-- Insert a pipeline of your algorithm here if got one -->
 <div align="center">
@@ -122,8 +124,8 @@ The pretrained weights can be downloaded from [Google Drive](https://drive.googl
 |FMUNet|AbdomenCT-1K| `fmunet_abk1k_volf.pt`|
 |PCT-Net|CT10k| `pctnet_ct10k_volf.pt`|
 
-where FMUNet is a modified version of 3D UNet as described in [2], and PCT-Net is a hybrid model 
-using CNN and Transformer proposed in [1].
+where FMUNet is a modified version of 3D UNet as described in [1], and PCT-Net is a hybrid model 
+using CNN and Transformer proposed in [2].
 
 ## Demo for Using the Pretrained Model
 **Package and data requirement**
