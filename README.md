@@ -51,10 +51,10 @@
 This repository provides the official implementation of pretrained medical image segmentation models based on Volume Fusion (VolF), accordingn to the following papers:
 
 * [1] Guotai Wang, Jia Fu,Jianghao Wu, Xiangde Luo, Yubo Zhou, Xinglong Liu, Kang Li, Jingsheng Lin, Baiyong Sheng, Shaoting Zhang,
-Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentation. [IEEE TIP, vol. 34, pp. 6041-6052](https://ieeexplore.ieee.org/document/11175343), 2025.
+[Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentation](https://ieeexplore.ieee.org/document/11175343). IEEE TIP, vol. 34, pp. 6041-6052, 2025.
 
-* [2] Guotai Wang, Jianghao Wu, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang, MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset.
-[arXiv:2306.16925](https://arxiv.org/pdf/2306.16925.pdf), 2023.
+* [2] Guotai Wang, Jianghao Wu, Xiangde Luo, Xinglong Liu, Kang Li, Shaoting Zhang, [MIS-FM: 3D Medical Image Segmentation using Foundation Models Pretrained on a Large-Scale Unannotated Dataset](https://arxiv.org/pdf/2306.16925.pdf).
+arXiv:2306.16925, 2023.
 <!-- 
 @article{Wang2025VolF,
   title={	Volume Fusion-based Self-Supervised Pretraining for 3D Medical Image Segmentation},
